@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "sample-aws-lambda-s3-trigger"
+version = "0.1.0"
+description = ""
+authors = ["Hiroaki Suzuki <rirazou05410@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+flake8 = "^7.0.0"
+black = "^24.4.0"
+isort = "^5.13.2"
+pep8-naming = "^0.13.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 100
+target-version = ['py312']
+
+[tool.isort]
+profile = "black"
